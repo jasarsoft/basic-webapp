@@ -24,6 +24,10 @@
         <br />
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
     
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+    
     </div>
     </form>
 </body>

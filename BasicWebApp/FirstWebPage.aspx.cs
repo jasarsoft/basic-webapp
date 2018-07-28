@@ -11,7 +11,7 @@ namespace BasicWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string myStr = "Loading...";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,6 +22,25 @@ namespace BasicWebApp
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
             Label1.Text = Calendar1.SelectedDate.ToLongDateString();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            System.Collections.ArrayList alist = new System.Collections.ArrayList();
+
+            int i;
+            string arrayValue;
+
+            for (i = 0; i < 5; i++)
+            {
+                arrayValue = "i = " + i.ToString();
+                alist.Add(arrayValue);
+            }
+
+            for (i = 0; i < alist.Count; i++)
+            {
+                Response.Write("<br />" + alist[i]);
+            };
         }
     }
 }
