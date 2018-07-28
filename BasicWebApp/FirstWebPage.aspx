@@ -20,6 +20,10 @@
         <br />
         <asp:Label ForeColor="Red" ID="Label1" runat="server" Text="Label"></asp:Label>
     
+        <br />
+        <br />
+        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+    
     </div>
     </form>
 </body>
