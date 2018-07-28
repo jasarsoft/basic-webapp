@@ -26,7 +26,7 @@ namespace BasicWebApp
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            System.Collections.ArrayList alist = new System.Collections.ArrayList();
+            System.Collections.ArrayList ArrayList1 = new System.Collections.ArrayList();
 
             int i;
             string arrayValue;
@@ -34,10 +34,10 @@ namespace BasicWebApp
             for (i = 0; i < 5; i++)
             {
                 arrayValue = "i = " + i.ToString();
-                alist.Add(arrayValue);
+                ArrayList1.Add(arrayValue);
             }
 
-            i = DisplyArray(alist);
+            i = DisplyArray(ArrayList1);
         }
 
         private int DisplyArray(System.Collections.ArrayList alist)
