@@ -37,10 +37,17 @@ namespace BasicWebApp
                 alist.Add(arrayValue);
             }
 
+            i = DisplyArray(alist);
+        }
+
+        private int DisplyArray(System.Collections.ArrayList alist)
+        {
+            int i;
             for (i = 0; i < alist.Count; i++)
             {
                 Response.Write("<br />" + alist[i]);
             };
+            return i;
         }
     }
 }
