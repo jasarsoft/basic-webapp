@@ -22,7 +22,7 @@
     
         <br />
         <br />
-        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+        <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
     
     </div>
     </form>

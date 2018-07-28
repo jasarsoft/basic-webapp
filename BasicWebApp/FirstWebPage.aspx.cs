@@ -18,5 +18,10 @@ namespace BasicWebApp
         {
             Label1.Text = TextBox1.Text + ", welcome to Visual Studio!";
         }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            Label1.Text = Calendar1.SelectedDate.ToLongDateString();
+        }
     }
 }
